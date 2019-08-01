@@ -1,0 +1,40 @@
+{
+  "name": "monarch-token-authenticator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Matt Bower",
+  "license": "ISC",
+  "dependencies": {
+    "abi": "0.0.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.1.0",
+    "crontab": "^1.2.0",
+    "ethereumjs-tx": "^2.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^5.3.1",
+    "fs": "0.0.1-security",
+    "http-proxy-middleware": "^0.19.1",
+    "jsonwebtoken": "^8.5.1",
+    "mdbreact": "^4.17.0",
+    "mongodb": "^3.2.7",
+    "mongodb-cron": "^1.7.0",
+    "mongoose": "^5.6.2",
+    "morgan": "^1.9.1",
+    "node-cron": "^2.0.3",
+    "reactstrap": "^8.0.0",
+    "request": "^2.88.0",
+    "requests": "^0.2.2",
+    "web3": "^1.0.0-beta.55"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1"
+  }
+}
