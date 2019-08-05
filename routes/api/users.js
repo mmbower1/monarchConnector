@@ -69,12 +69,9 @@ router.post(
                     console.log(" ");
                     console.log(" ");
                     console.log(" =========================================================================== ");
-                    // "email" : "jr@splashfactory.com",
-                    // "wallet" : "0xb157CD3B373C6686e8A992DD6ea254D7495ca9fD",
-                    // query: {"email: ":"jr@splashfactory.com","wallet ":"0xb157CD3B373C6686e8A992DD6ea254D7495ca9fD"}
-
                     console.log("query: " + JSON.stringify(query));
-                    await User.updateOne(query, {transaction: true, subscribed: subscription}, {upsert:true, strict: false}, 
+                    // await User.updateOne(query, {transaction: true, subscribed: subscription}, {unique: true, upsert:true}, 
+                        await User.updateOne(query, {transaction: true, subscribed: subscription},  
                         function(err, doc){
                             if (err) return res.send(500, { error: err });
                             console.log("User.updateOne callback");

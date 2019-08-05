@@ -69,7 +69,7 @@ class ModalExample extends Component {
 					// contentLabel="Example Modal"
         		>
 					<br></br>
-					<h4><strong>Thanks for participating!</strong></h4>
+					<h5><strong>Thanks for participating! Tokens are sent Fridays, 12pm PST</strong></h5>
 					<br />
 					<h6 ref={subtitle => this.subtitle = subtitle}><strong>Your balance is: </strong></h6>
 					<h4><strong>{this.state.balance} MT</strong></h4>

@@ -3,3 +3,4 @@ config/
 dump/
 cronjob.js
 database-additions-updated.csv
+weeklyTransactions.js
