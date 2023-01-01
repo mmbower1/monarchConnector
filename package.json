@@ -14,7 +14,7 @@
   "dependencies": {
     "abi": "0.0.0",
     "bcryptjs": "^2.4.3",
-    "config": "^3.1.0",
+    "config": "^3.3.8",
     "crontab": "^1.2.0",
     "ethereumjs-tx": "^2.0.0",
     "express": "^4.17.1",
